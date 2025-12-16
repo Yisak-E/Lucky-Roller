@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-100 flex item-center justify-center min-h-screen  font-sans">
-    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl w-full max-w-md flex flex-col items-center gap-6">
+    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl w-full lg:max-w-lg flex flex-col items-center gap-6">
         
         <div class="text-center">
             <h1 class="text-3xl font-extrabold text-slate-800 mb-1">Lucky Roller</h1>
@@ -56,11 +56,20 @@
                     </g>
                     
                     <!-- Center decorative knob -->
-                    <circle cx="100" cy="100" r="10" fill="white" stroke="#334155" stroke-width="2"/>
+                    <circle cx="100" cy="100" r="10" fill="white" stroke="#334155"  stroke-width="2"/>
                 </svg>
+            
             </div>
+
+            <!-- Result Display -->
+             <div id="resultMessage" class="h-16 flex item-center justify-center text-center w-full bg-slate-50 rounded-lg border border-slate-100 p-2 opacity-0 transition-opacity duration-300">
+               
+                <p class="text-lg font-medium text-slate-700" id="resultText">Spin to play</p>
+             </div>
         
     </div>
+    <script src="main.ts"></script>
+    <script src="major.js"></script>
 </body>
 
 </html>
